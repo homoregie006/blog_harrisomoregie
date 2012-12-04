@@ -1,1 +1,1 @@
-<?php
+<p>Copyright &copy; 2012</p>
