@@ -8,12 +8,16 @@ require('config/db.php');
 		<link rel="icon" type="image/png" href="images/nav_icon.png" />
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="styles.css" />
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
 		<title>Blog</title>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
-					<?php include('layout/header.php')?>
+				<?php include('layout/header.php')?>
 			</header>
 			<nav>
 				<?php include('layout/nav.php')?>

@@ -2,7 +2,7 @@
 // Initialize session
 session_start();
 
-$conn = new mysqli ('localhost','blog_user','mYeFN3zZGDafvNXP','blog');
+$conn = new mysqli ('localhost','blog_user','se5UTn2ptD6ydpUd','blog');
 
 // Extract POST data
 extract($_POST);
@@ -31,11 +31,10 @@ if($post_title == '' || $post_text == '') {
 // Load DB constants
 require('../config/db.php');
 
-// Connect to the database
-$conn = new mysqli ('localhost','blog_user','mYeFN3zZGDafvNXP','blog');
+
 
 //Construct
-$sql = "INSERT INTO blog (post_title,post_text) VALUES('$post_title',$post_text)";
+$sql = "INSERT INTO posts (post_title,post_text) VALUES('$post_title','$post_text')";
 
 // Execute query
 $conn->query($sql);
