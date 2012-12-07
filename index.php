@@ -12,7 +12,7 @@ require('config/db.php');
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		
-		<title>Blog</title>
+		<title>Ipsum Blog</title>
 	</head>
 	<body>
 		<div id="wrapper">

@@ -31,7 +31,8 @@ if($post_title == '' || $post_text == '') {
 // Load DB constants
 require('../config/db.php');
 
-
+$post_title = addslashes($post_title);
+$post_text = addslashes($post_text);
 
 //Construct
 $sql = "INSERT INTO posts (post_title,post_text) VALUES('$post_title','$post_text')";
