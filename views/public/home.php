@@ -16,8 +16,15 @@ $sql = "SELECT * FROM posts ORDER BY $order DESC";
 $results = $conn->query($sql);
 
 ?>
-<?php post($post = $results->fetch_assoc()) ?>
+<?php $post = $results->fetch_assoc(); ?>
 <h2><a href="./?p=public/post&id=<?php echo $post['post_id']?>"><?php echo $post['post_title'] ?></a></h2>
+<?php 
+	// Make a PHP timestamp
+	$time = strtotime($post['post_datepublished']);
+	
+	// Format the timestamp for display
+	$date = date('M j, Y',$time);
+	?>
 <?php echo $date; ?>
 	<br/>
 	<?php echo $post['post_text'] ?>
@@ -34,6 +41,5 @@ $results = $conn->query($sql);
 	<h2><a href="./?p=public/post&id=<?php echo $post['post_id']?>"><?php echo $post['post_title'] ?></a></h2>
 	<?php echo $date; ?>
 	<br/>
-	<?php echo $post['post_text'] ?>
 </div>
 <?php endwhile ?>

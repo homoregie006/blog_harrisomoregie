@@ -1,5 +1,5 @@
 body {
-	background:#222;
+	background:#E08814;
 	margin:10px 0px 0px 0px;
 }
 
@@ -33,6 +33,14 @@ table th a:hover {
 
 table td.actions {
 	text-align:center;
+}
+
+div#content h2 a {
+	color:#6E6E6E;
+}
+
+div#title{
+	color:#E08814;
 }
 
 footer {
